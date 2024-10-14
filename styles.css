@@ -387,7 +387,7 @@ footer{
     .conc h1{
         font-size: 1.7rem;
     }
-    }
+    
     .but{
         justify-content: center;
         padding-bottom: 2rem;
@@ -582,5 +582,4 @@ footer{
     h2, h1{
         font-size: 20px;
     } 
-    
 }
