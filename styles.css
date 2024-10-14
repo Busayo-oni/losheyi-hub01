@@ -1,0 +1,586 @@
+body{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Roboto" arial;
+}
+h1,h2,h3, h4, h5, b{
+    font-family: "Poppins";
+}
+p{
+    font-family: "Roboto";
+    font-size: 14px;
+}
+button{
+    cursor: pointer;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 99999999999999;
+    padding-bottom: 20px;
+}
+.menu-btn {
+    font-size: 24px;
+    /* display: block; */
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+.menu-btn:hover{
+        background-color: #fff;
+        transition: 1s;
+        color: #ab8963;
+        border: 2px solid #ab8963;
+}
+header{
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+nav ul{
+    display: flex;
+    font-family: "Roboto";
+    align-items: center;
+    justify-content: center;
+    color: slate-400;
+    font-size: 16px;
+}
+nav ul li{
+    padding: 0 20px;
+    list-style-type: none;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #ab8963;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: roboto, arial;
+}
+.concept{
+    background-color: #fff6ff;
+    display: flex;
+    align-items: center;
+    padding: 50;
+}
+.conc, .haven{
+    width: 50%;
+}
+.conc img{
+    width: 100%;
+}
+.conc h1{
+    font-size: 3rem;
+}
+.conc p{
+    line-height: 2rem;
+}
+.but{
+    display: flex;
+    gap: 5rem;
+}
+.but button{
+    padding: 8 20;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.but button:hover{
+    background-color: #83807a;
+    transition: 0.5s ease;
+}
+.but button:active{
+    background-color: #afafae;
+    transition: 0.5s ease;
+}
+.but .black{
+    color: white;
+    background-color: #000;
+}
+.container{
+    display: flex;
+    /* align-items: center; */
+    height: 70vh;
+    padding: 30;
+    padding-left: 50;
+}
+.back{
+    background-color: #ab8963;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    bottom: 30;
+    right: 20;
+
+}
+.back img{
+    width: 120%;
+    height: 110%;
+    position: relative;
+    left: 20;
+    top: 30;
+    
+}
+.back-en{
+    background-color: #ab8963;
+    color: #fff;
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+}
+.move{
+    background-color: #fff;
+    position: relative;
+    left: -40%;
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+}
+.move b{
+    position: relative;
+    left: 20;
+}
+.collection{
+    padding: 30 20;
+    background-color: #e7e2e2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* height: 60vh; */
+}
+.collection img{
+    width: 250;
+    height: 200;
+}
+.nature{
+    padding: 20;
+    text-align: center;
+}
+.library{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 30;
+    padding-bottom: 30;
+}
+.library img{
+    width: 350;
+    height: 300;
+}
+.library img:hover{
+    position: relative;
+    top: 10;
+    left: 10;
+    transition: 5s ease-out;
+}
+.modern{
+    padding: 30;
+    display: flex;
+    align-items: center;
+}
+.write, .places{
+    width: 50%;
+    position: relative;
+}
+.place{
+    background-color: #ab8963;
+    width: 92%;
+    position: relative;
+    bottom: 20;
+    left: 20;
+}
+.place img{
+    width: 100%;
+    position: relative;
+    top: 20;
+    right: 20;
+}
+.write img{
+    width: 30%;
+    position: absolute;
+    bottom: -123;
+    right: -30;
+    z-index: 1111111;
+}
+.writen{
+    padding-right: 40%;
+}
+.writen b{
+    font-size: 1.7rem;
+}
+.view{
+    padding: 30px;
+}
+.view img{
+    width: 100%;
+    height: 100vh;
+}
+.trend{
+    display: flex;
+    padding: 30;
+    gap: 5rem;
+}
+.tend{
+    width: 50%;
+}
+.illus{
+    width: 97%;
+    height: 76%;
+    background-color: #ab8963;
+    position: relative;
+    left: 20;
+}
+.illus img{
+    width: 100%;
+}
+.pend{
+    padding: 20;
+    margin: 5;
+    background-color: gainsboro;
+}
+.sponsor{
+    height: 80vh;
+    background-image: url(assets/less_obvious_example_of_logo_grid_that_needs_work.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: 30%;
+    padding-bottom: 100;
+}
+.grid{
+    padding: 30;
+    display: flex;
+    gap: 10px;
+}
+.comb, .combs{
+    width: 50%;
+}
+.comb img, .combs img{
+    width: 100%;
+    height: 100%;
+}
+.comb{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.learn{
+    background-color: #000;
+    color: #fff;
+    padding: 20 200;
+    text-align: center;
+}
+.learn button{
+    padding: 10 20;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid ;
+}
+.learn button:hover{
+    background-color: #83807a;
+    transition: 0.5s ease;
+}
+.learn button:active{
+    background-color: #afafae;
+    transition: 0.5s ease;
+}
+footer{
+    background-color: #312e29;
+    color: #fff;
+    padding: 30;
+}
+.categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding-bottom: 5;
+    border-bottom: 1px solid #e7e2e2;
+}
+.link{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .menu-btn{
+        display: block;
+    }
+    .side-menu {
+        position: fixed;
+        top: 0;
+        top: -150%; /* Start off-screen */
+        width: 250px;
+        height: 50%;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px #312e29, -1px -1px 1px #b8b5b1;
+        transition: top 0.6s ease;
+        padding-bottom: 120px;
+        /* align-items: center; */
+    }
+    
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .side-menu ul li {
+        padding: 15px;
+        border-bottom: 1px solid #777;
+    
+    }
+    
+    .side-menu ul li a {
+        color: #000;
+        text-decoration: none;
+    }
+    .side-menu.active {
+        /* left: 0; */
+        top: 35px;
+    }
+    nav{
+        
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    
+    }
+    nav ul{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    nav ul li{
+        font-size: 12px;
+    }
+
+    .concept{
+        flex-direction: column;
+        align-items: center;
+        padding: 20;
+    }
+    .conc, .haven{
+        width: 100%;
+        text-align: center;
+    }
+    .conc img{
+        width: 100%;
+    }
+    .conc h1{
+        font-size: 1.7rem;
+    }
+    }
+    .but{
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        height: 100vh;
+        padding: 20;
+        padding-left: 20;
+    }
+    .back{
+        background-color: #ab8963;
+        width: 80%;
+        height: 90%;
+        position: relative;
+        bottom: 30;
+        right: 0;
+    
+    }
+    .back img{
+        width: 120%;
+        height: 110%;
+        position: relative;
+        left: 20;
+        top: 30;
+        
+    }
+    .back-en{
+        background-color: #ab8963;
+        color: #fff;
+        width: 90%;
+        height: 30%;
+        padding: 20px;
+    }
+    
+    .move{
+        background-color: #fff;
+        position: relative;
+        left: 0%;
+        width: 90%;
+        height: 30%;
+        padding: 20px;
+    }
+    .move b{
+        left: 0;
+    }
+    .collection{
+        gap: 10px;
+        grid-template-columns: 1fr;
+        /* height: 60vh; */
+    }
+    .collection img{
+        width: 100%;
+        height: 400;
+    }
+    .big{
+        padding: 20 0;
+    }
+    .nature{
+        padding: 20;
+        text-align: center;
+    }
+    .library{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+        gap: 10px;
+        padding-bottom: 30;
+    }
+    .library img{
+        width: 100%;
+        height: 200;
+    }
+    .library img:hover{
+        position: relative;
+        top: 10;
+        left: 10;
+        transition: 5s ease-out;
+    }
+    .modern{
+        padding: 20;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .write, .places{
+        width: 100%;
+        position: relative;
+    }
+    .write{
+        padding-bottom: 50;
+    }
+    .place{
+        background-color: #ab8963;
+        width: 92%;
+        position: relative;
+        bottom: 20;
+        left: 20;
+    }
+    .place img{
+        width: 100%;
+        position: relative;
+        top: 20;
+        right: 20;
+    }
+    .write img{
+        width: 40%;
+        position: absolute;
+        bottom: 60;
+        right: 0;
+        z-index: 0;
+    }
+    .writen{
+        padding-right: 40%;
+    }
+    .writen b{
+        font-size: 1.2rem;
+    }
+    .view{
+        padding: 30px;
+    }
+    .view img{
+        width: 100%;
+        height: 60vh;
+    }
+    .trend{
+        display: flex;
+        flex-direction: column;
+        padding: 20;
+        gap: 5rem;
+    }
+    .tend{
+        width: 100%;
+    }
+    .illus{
+        width: 100%;
+        height: 76%;
+        background-color: #ab8963;
+        position: relative;
+        left: 0;
+    }
+    .illus img{
+        width: 100%;
+    }
+    .pend{
+        margin: 5 0;
+
+    }
+    .sponsor{
+        height: 40vh;
+    }
+    .grid{
+        padding: 30;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .comb, .combs{
+        width: 100%;
+    }
+    .learn{
+        background-color: #000;
+        color: #fff;
+        padding: 20;
+        text-align: center;
+    }
+    .learn button{
+        padding: 10 20;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+    footer{
+        background-color: #312e29;
+        color: #fff;
+        padding: 30;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-bottom: 5;
+        border-bottom: 1px solid #e7e2e2;
+    }
+    p{
+        font-size: 13px;
+    }
+    b{
+        font-size: 14px;
+    }
+    h2, h1{
+        font-size: 20px;
+    } 
+    
+}
